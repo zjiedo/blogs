@@ -1,15 +1,6 @@
-.DS_Store
 node_modules/
-docs/ .vuepress/theme/
-docs/ .vuepress/dist/
-/dist/
-npm-debug.log*
-
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+docs/.vuepress/theme/
+docs/.vuepress/dist/
+.idea/
+/test.js
+/yarn.lock
