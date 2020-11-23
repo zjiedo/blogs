@@ -6,7 +6,7 @@ module.exports = {
     base: '/blogs/', // 部署到GitHub相关的配置
     theme: 'reco',
     title: 'Jill\'s Blogs',
-    description: '让世界因为代码而更美好',
+    description: 'for better coding',
     plugins: {
         '@vuepress/medium-zoom': {
             selector: 'img.zoom-custom-imgs',
@@ -22,7 +22,7 @@ module.exports = {
     },
     themeConfig: {
         huawei: true,
-        type: 'blogs',
+        type: 'blog',
         author: 'Jill',
         // valine
         valineConfig: {
@@ -45,7 +45,7 @@ module.exports = {
             {text: 'nodejs', link: '/node/'},
             {text: 'java', link: '/java/'},
             {text: '时间线', link: '/timeLine/', icon: 'reco-date'},
-            // {text: '友链', link: '/friendLink/'},
+            {text: '友链', link: '/friendLink/'},
             {text: '关于', link: '/nested/',icon: 'account_circle'},
         ],
         sidebar: {
