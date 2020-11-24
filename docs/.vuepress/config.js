@@ -26,13 +26,17 @@ module.exports = {
         author: 'Jill',
         // valine
         valineConfig: {
-            appId: '20uttEi9BN7qb7fMVhJwCEoc-gzGzoHsz',// your appId
-            appKey: 'W2mkX4DhUukTDsfQeHi7mzQu', // your appKey
-            notify:false,
-            verify:false,
+            enable: true,
+            appId: 'AOMCoOm6HdJz0YClzKHGq2Qk-gzGzoHsz',// your appId
+            appKey: 'wMmTwCgtj6KkzzFIFc0LFifl', // your appKey
+            notify: true,
+            verify: true,
             avatar:'mp',
             placeholder: '填写邮箱可以收到回复提醒哦',
-            visitor: true // 阅读量统计
+            visitor: true, // 阅读量统计
+            pageSize: 10,
+            visitor: false,
+            comment_count: true,
         },
         nav: [
             {text: 'Home', link: '/'},
@@ -76,10 +80,12 @@ module.exports = {
             }
         },
         sidebarDepth: 2, // 侧边栏显示2级
-        algolia: {  // 搜索需要提交
-            apiKey: '<API_KEY>',
-            indexName: '<INDEX_NAME>'
-        },
+        // algolia: {  // 搜索需要提交
+        //     apiKey: '<API_KEY>',
+        //     indexName: '<INDEX_NAME>'
+        // },
+        search: true,
+        searchMaxSuggestions: 10,
         lastUpdated: 'Last Updated', // string | boolean
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'zjiedo/blogs',
