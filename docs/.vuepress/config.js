@@ -41,9 +41,15 @@ module.exports = {
                     {text: 'vue', link: '/web/vue/'},
                     {text: 'H5', link: '/web/H5/'},
                     {text: 'React', link: '/web/React/'},
-                ]},
+                ]
+            },
+            {text: '数据结构', link: '/dataStructure/', items: [
+                    {text: '每日一题', link: '/dataStructure/dailyCode/'},
+                    {text: '有序数据', link: '/dataStructure/orderData/'},
+                ]
+            },
             {text: 'nodejs', link: '/node/'},
-            {text: 'java', link: '/java/'},
+            // {text: 'java', link: '/java/'},
             {text: '时间线', link: '/timeLine/', icon: 'reco-date'},
             {text: '友链', link: '/friendLink/'},
             {text: '关于', link: '/nested/',icon: 'account_circle'},
@@ -52,7 +58,11 @@ module.exports = {
             '/web/es6/': ['es7_decorator','ArrayBuffer','ts_config'],
             '/web/vue/': ['vuePress_deploy'],
             '/web/H5/' : ['svg'],
-            '/web/React/': ['chess']
+            '/web/React/': ['chess'],
+            '/dataStructure/dailyCode/': ['2020-11'],
+            '/dataStructure/orderData/': [
+                'Array'
+            ]
         },
         // 博客设置
         blogConfig: {
