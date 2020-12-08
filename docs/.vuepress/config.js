@@ -42,31 +42,31 @@ module.exports = {
             {text: 'Home', link: '/'},
             {text: '前端', link: '/web/', items: [
                     {text: 'es6', link: '/web/es6/'},
-                    {text: 'vue', link: '/web/vue/'},
-                    {text: 'H5', link: '/web/H5/'},
-                    {text: 'React', link: '/web/React/'},
+                    // {text: 'vue', link: '/web/vue/'},
+                    // {text: 'H5', link: '/web/H5/'},
+                    // {text: 'React', link: '/web/React/'},
                 ]
             },
-            {text: '数据结构', link: '/dataStructure/', items: [
-                    {text: '每日一题', link: '/dataStructure/dailyCode/'},
-                    {text: '有序数据', link: '/dataStructure/orderData/'},
-                ]
-            },
+            // {text: '数据结构', link: '/dataStructure/', items: [
+            //         {text: '每日一题', link: '/dataStructure/dailyCode/'},
+            //         {text: '有序数据', link: '/dataStructure/orderData/'},
+            //     ]
+            // },
             {text: 'nodejs', link: '/node/'},
             // {text: 'java', link: '/java/'},
-            {text: '时间线', link: '/timeLine/', icon: 'reco-date'},
-            {text: '友链', link: '/friendLink/'},
+            // {text: '时间线', link: '/timeLine/', icon: 'reco-date'},
+            // {text: '友链', link: '/friendLink/'},
             {text: '关于', link: '/nested/',icon: 'account_circle'},
         ],
         sidebar: {
-            '/web/es6/': ['es7_decorator','ArrayBuffer','ts_config'],
-            '/web/vue/': ['vuePress_deploy'],
-            '/web/H5/' : ['svg'],
-            '/web/React/': ['chess'],
-            '/dataStructure/dailyCode/': ['2020-11'],
-            '/dataStructure/orderData/': [
-                'Array'
-            ]
+            '/web/es6/': ['custom_promise'],
+            // '/web/vue/': ['vuePress_deploy'],
+            // '/web/H5/' : ['svg'],
+            // '/web/React/': ['chess'],
+            // '/dataStructure/dailyCode/': ['2020-11'],
+            // '/dataStructure/orderData/': [
+            //     'Array'
+            // ]
         },
         // 博客设置
         blogConfig: {
