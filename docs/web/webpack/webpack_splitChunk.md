@@ -113,3 +113,7 @@ tags:
 ​	这个参数表示：入口点的最大并行请求数，默认值为3。之所以有这个配置也是为了对拆分数量进行限制，不至于拆分出太多模块导致请求数量过多而得不偿失。
 
 - 如果同时有两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来。
+
+##### 有点难，过几天再理解
+
+ <img src="./images/error.png" alt="error" title="'error'" style="width:500px;" />
