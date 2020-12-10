@@ -42,7 +42,7 @@ module.exports = {
             {text: 'Home', link: '/'},
             {text: '前端', link: '/web/', items: [
                     {text: 'es6', link: '/web/es6/'},
-                    // {text: 'vue', link: '/web/vue/'},
+                    {text: 'webpack', link: '/web/webpack/'},
                     // {text: 'H5', link: '/web/H5/'},
                     // {text: 'React', link: '/web/React/'},
                 ]
@@ -60,7 +60,7 @@ module.exports = {
         ],
         sidebar: {
             '/web/es6/': ['custom_promise'],
-            // '/web/vue/': ['vuePress_deploy'],
+            '/web/webpack/': ['webpack_splitChunk'],
             // '/web/H5/' : ['svg'],
             // '/web/React/': ['chess'],
             // '/dataStructure/dailyCode/': ['2020-11'],
