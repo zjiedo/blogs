@@ -6,7 +6,7 @@ module.exports = {
     base: '/blogs/', // 部署到GitHub相关的配置
     theme: 'reco',
     title: 'Jill\'s Blogs',
-    description: 'for better coding',
+    description: 'Hello Jill! Hello World!',
     plugins: {
         '@vuepress/medium-zoom': {
             selector: 'img.zoom-custom-imgs',

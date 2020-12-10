@@ -9,10 +9,10 @@ tags:
 - splitChunk
 ---
 
-##### 前言
+# 前言
   数星期之前，领导让我把webpack3升级一下。因为公司用的框架是vue， 所以我直接换了vue-cli4，因为这个实在简单多了，一步到位比较好。
 
-###### webpack3配置代码拆分
+## webpack3配置代码拆分
 
   因为原来项目用了为了缓存改变不常改变的包， 用了webpack.optimize.CommonsChunkPlugin，并且定义了如下配置：
   ```javascript
@@ -73,9 +73,9 @@ tags:
 
   <img src="./images/webpack3_codeSpliting.png" alt="webpack3_CommonsChunkPlugin" title="'webpack3_CommonsChunkPlugin'" style="width:500px;" />
 
-###### webpack4配置代码拆分
+## webpack4配置代码拆分
 - 在vue.config.js中配置
-```
+```javascript
  config.optimization.splitChunks({
     chunks: 'all', // async表示抽取异步模块，all表示对所有模块生效，initial表示对同步模块生效
     minSize: 0,
@@ -101,19 +101,19 @@ tags:
   <img src="./images/webpack_source_code.png" alt="webpack3_SplitChunksPlugin" title="'webpack3_SplitChunksPlugin'" style="width:500px" />
 
 - 与chunk-base 的chunk相比，chunk-xlsx的getRequests(chunk)的值大了 ‘1’， 然后我往xlsx的配置中加了maxInitialRequests参数，就好了：
-  ```
+  ```javascript
     maxInitialRequests: 4
   ```
 - 打包的结果如下：
   <img src="./images/webpack4_codeSpliting.png" alt="webpack3_codeSpliting" title="'webpack3_codeSpliting'" style="width: 500px" />
 - 所以我们来说说maxInitialRequests参数吧！
 
-##### maxInitialRequests
+## maxInitialRequests
 
 ​	这个参数表示：入口点的最大并行请求数，默认值为3。之所以有这个配置也是为了对拆分数量进行限制，不至于拆分出太多模块导致请求数量过多而得不偿失。
 
 - 如果同时有两个模块满足cacheGroup的规则要进行拆分，但是maxInitialRequests的值只能允许再拆分一个模块，那尺寸更大的模块会被拆分出来。
 
-##### 有点难，过几天再理解
+## 有点难，过几天再理解
 
- <img src="./images/error.png" alt="error" title="'error'" style="width:500px;" />
+ <img src="./images/error.jpg" alt="error" title="'error'" style="width:500px;" />
