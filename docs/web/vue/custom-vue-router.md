@@ -16,7 +16,7 @@ tags:
 
    可以使用vue-cli来生成初始项目，然后使用自定义的router插件，具体是在router配置文件中导入：
 
-<img src="./images/vue-router.png" alt="webpack3_CommonsChunkPlugin" title="'webpack3_CommonsChunkPlugin'" style="width:500px;" />
+<img src="./images/vue-router.png" alt="vue-router" title="vue-router" style="width:500px;" />
 
 ## vue-router
 
