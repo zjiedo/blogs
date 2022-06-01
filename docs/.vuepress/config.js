@@ -41,32 +41,18 @@ module.exports = {
         nav: [
             {text: 'Home', link: '/'},
             {text: '前端', link: '/web/', items: [
-                    {text: 'es6', link: '/web/es6/'},
-                    {text: 'webpack', link: '/web/webpack/'},
-                    {text: 'vue', link: '/web/vue/'},
-                    // {text: 'React', link: '/web/React/'},
+                    {text: 'es6', link: '/web/es6/custom_promise.md'},
+                    {text: 'webpack', link: '/web/webpack/webpack_splitChunk.md'},
+                    {text: 'vue', link: '/web/vue/custom-vue-router.md'},
                 ]
             },
-            // {text: '数据结构', link: '/dataStructure/', items: [
-            //         {text: '每日一题', link: '/dataStructure/dailyCode/'},
-            //         {text: '有序数据', link: '/dataStructure/orderData/'},
-            //     ]
-            // },
             {text: 'nodejs', link: '/node/'},
-            // {text: 'java', link: '/java/'},
-            // {text: '时间线', link: '/timeLine/', icon: 'reco-date'},
-            // {text: '友链', link: '/friendLink/'},
             {text: '关于', link: '/nested/',icon: 'account_circle'},
         ],
         sidebar: {
             '/web/es6/': ['custom_promise'],
             '/web/webpack/': ['webpack_splitChunk'],
             '/web/vue/' : ['custom-vue-router'],
-            // '/web/React/': ['chess'],
-            // '/dataStructure/dailyCode/': ['2020-11'],
-            // '/dataStructure/orderData/': [
-            //     'Array'
-            // ]
         },
         // 博客设置
         blogConfig: {
